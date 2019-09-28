@@ -1,1 +1,18 @@
 // Mixins Here
+.flex-box(@justify,@align,@direction:row,@wrap:nowrap){
+    display: flex;
+    flex-flow: @direction @wrap;
+    justify-content: @justify;
+    align-items: @align;
+    }
+    
+.button(@bg-color,@txt-color,@txt-size,@bd-radius,@width:100%,@height){
+    background: @bg-color;
+    color: @txt-color;
+    font-size: @txt-size;
+    border-radius: @bd-radius;
+    width: @width;
+    height: @height;
+    text-align: center;
+    padding: 10px;
+}
